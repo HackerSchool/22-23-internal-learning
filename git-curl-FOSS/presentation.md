@@ -19,6 +19,15 @@ colortheme:
 
 # Version control?
 
+##  
+It has happened to all of us!
+![Development without SCM](./noGit.png)
+Time to ditch this...
+
+## For something waaaay better
+![git log](./gitLog.png)
+
+
 ## What is version control?
 
 Version control is the practice of managing and documenting _data_ (code, schematics, etc.)
@@ -27,8 +36,6 @@ iterations.
 It is particularly important in our context of Free and Open Source software,
 as a careful documentation of alterations between versions and the ability to inspect
 older or deprecated sources can make issue resolution and feature integration much more agile.
-
-# Tools
 
 ## git?
 
@@ -95,9 +102,19 @@ git remote add origin https://github.com/@name/@string.git
 
 # Your first commit!
 
+## Git Status
+This command alows you to view the state of your project (repo)
+![Git Status](./gitStatus.png)
+
+
 ## Add
+- When we want the SCM to start track a specific file we use `git add <file_path>` 
+- We also use git add to stage files changes for commiting
+
+![Git Add](./gitAdd.png)
 
 ## Commit
+- To commit (record the selected changes to the history) we use the command `git commit -m "commit message"`
 
 ## Push
 
