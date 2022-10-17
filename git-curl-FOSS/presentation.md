@@ -5,6 +5,8 @@ subtitle:
 - A introductory course on FOSS, git, curl and web integrations
 author:
 - João Barreiros C. Rodrigues
+- Francisco Carvalho
+- Nuno Abreu
 institute:
 - HackerSchool
 fonttheme:
@@ -18,15 +20,6 @@ colortheme:
 ---
 
 # Version control?
-
-##  
-It has happened to all of us!
-![Development without SCM](./noGit.png)
-Time to ditch this...
-
-## For something waaaay better
-![git log](./gitLog.png)
-
 
 ## What is version control?
 
@@ -44,6 +37,18 @@ Its free software under the GPL v2.0.
 
 Git allows cloning, pulling, pushing, etc. of data stored in git instances.
 
+##  
+It has happened to all of us!
+![Development without SCM](./noGit.png)
+Time to ditch this...
+
+## For something waaaay better
+![git log](./gitLog.png)
+
+##
+
+![](./gitDiff.png)
+
 ## curl?
 
 Curl (short for client-url), is the command line tool that makes use of libcurl,
@@ -57,15 +62,6 @@ Curl and libcurl are FOSS licensed under the curl license, based on the MIT Lice
 
 ## Repositories and actions
 ![Actions and interactions between repositories](./git-transport.png){height=260px}
-
-## A pratical example: hackerschool.io
-![Git/GitHub flow of the hackerschool.io repository](./git-transportHS.png){height=260px}
-
-# Tying our work with freedom
-
-## On FOSS
-
-## Licenses
 
 # Let's Start!
 
@@ -108,8 +104,9 @@ This command alows you to view the state of your project (repo)
 
 
 ## Add
-- When we want the SCM to start track a specific file we use `git add <file_path>` 
-- We also use git add to stage files changes for commiting
+- When we want the git log changes made to a file `git add <file_path>` 
+- When the file hasn't ever been tracked git will start to
+- This command only selects the files/modifications, it **does not** commit 
 
 ![Git Add](./gitAdd.png)
 
@@ -117,6 +114,13 @@ This command alows you to view the state of your project (repo)
 - To commit (record the selected changes to the history) we use the command `git commit -m "commit message"`
 
 ## Push
+- You can push your history to a remote repo using the command `git push <name_of_remote_repo>`
+    - Usually when using Github this remote is called **origin**
+- You can even have multiple remotes!
+    - to add one use `git remote add <name> <url>`, as seen in the curl part of this presentation
+
+## Frontends (Vscode)
+![Vs code](./vs-code-status.png)
 
 # Working together!
 
@@ -130,3 +134,8 @@ This command alows you to view the state of your project (repo)
 
 ## Other Actions!
  
+# Tying our work with freedom
+
+## On FOSS
+
+## Licenses
