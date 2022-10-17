@@ -4,7 +4,8 @@ title:
 subtitle:
 - A introductory course on FOSS, git, curl and web integrations
 author:
-- João Barreiros C. Rodrigues
+- J. Rodrigues
+- F. Carvalho
 institute:
 - HackerSchool
 fonttheme:
@@ -53,12 +54,6 @@ Curl and libcurl are FOSS licensed under the curl license, based on the MIT Lice
 
 ## A pratical example: hackerschool.io
 ![Git/GitHub flow of the hackerschool.io repository](./git-transportHS.png){height=260px}
-
-# Tying our work with freedom
-
-## On FOSS
-
-## Licenses
 
 # Let's Start!
 
@@ -112,4 +107,45 @@ git remote add origin https://github.com/@name/@string.git
 ## Merging with the web
 
 ## Other Actions!
- 
+
+# Tying our work with freedom
+
+## On FOSS and CC
+
+The first written document that described FOSS as a trend among hackers, programmers, engineers, etc. was the GNU Manifesto. This file also gave the philosophical foundations for the Free Software Foundation Network, and FOSS worldwide.
+
+In the context of HackerSchool FOSS is a core principle. Initiated in the administration of 22-23, HackerSchool has embraced free alternatives such as _GNU/Linux distros, FreeCAD, Jitsi, Signal_, allowing hackers to walk a path that is flexible, secure, and overall hacker-y.
+
+Since we benefit from this communal effort it is only fair that we also contribute to the greater good, therefore all HackerSchool code and documents are non-proprietary.
+
+## The two software architectures
+
++ **The Cathedral**
+
+	We can apply this architectural decision to both:
+
+	+ **Free Software**
+
+		The source code is centralized in an organizational environment, however it is released with any main binary. You will rarely look to the code in development.
+
+	+ **Proprietary Software**
+
+		The source code is never released, it is kept confined within the Corporations walls. The binary is spewed out of it, but you will have to reverse it to understand what it does! 
+
+## The two software architectures
++ **The Bazaar**
+
+	The Bazaar is characteristic of free software.
+
+	In a Bazaar architecture the source code is visible at all times, being normally communal projects, made of differently written modules. Its all nodes that compose a de-centralized tree! 
+
+	This architecture as the advantage of going according to Linus's Law:
+
+
+	_"given enough eyeballs, all bugs are shallow"_
+
+## Licenses
+
+![Licenses and properties](./table.png){height=260px}
+
+
