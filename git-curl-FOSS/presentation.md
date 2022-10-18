@@ -142,6 +142,13 @@ git pull origin
 ## A pratical example: hackerschool.io
 ![Git/GitHub flow of the hackerschool.io repository](./git-transportHS.png){height=260px}
 
+## Branching
++ Branching is a elementary tool that is part of git
++ A branch is an alternative streamline from main
+	+ It is used by collaborators that normally want to push some code that can break the master's features or that has it to be fully tested
+![Branches on the hackerschool.io repo (helps us fix hackercultura!!)](./branch.png){height=150px}
+	+ A branch can be switched into using ``` git checkout @branch``` or can be created and switched into by adding the ``` -b ``` flag to the previous command
++ In medium-small projects, branching may be enough
 
 ## Forking
 Note: This is a feature of Github and not git itself
@@ -150,8 +157,7 @@ Note: This is a feature of Github and not git itself
 - This means you can work freely, without pushing "trash" to the main repo
     - You can even start your own version of the project!
 - Once you're ready to merge your changes into the main repo you can open a **pull request**
-    - This is one way of contributing code to a public repo if you aren't a contributor (=have write access)
-- In medium-small projects, branching may be enough
+    - This is one way of contributing code to a public repo if you aren't a contributor (=have write access) 
 
 ![](./forkBtn.png)
 
@@ -161,6 +167,12 @@ Note: This is a feature of Github and not git itself
 When we want to merge with the original repo we open a pull request
 ![](./PR.png)
 
+## Conflicts
+Sometimes, when you and another collaborators make a change to the same line, GitHub's auto-merge feature cannot fix it.
+
+![A wild conflict appears (while making this presentation)](./conflict.png){height=160px}
+
+You will have to manually fix it by choosing which lines to keep from each branch! Trivial!
 
 # Tying our work with freedom
 
@@ -191,7 +203,7 @@ Since we benefit from this communal effort it is only fair that we also contribu
 
 	The Bazaar is characteristic of free software.
 
-	In a Bazaar architecture the source code is visible at all times, being normally communal projects, made of differently written modules. Its all nodes that compose a de-centralized tree! 
+	In a Bazaar architecture the source code is visible at all times, being normally communal projects, made of differently written modules. Everything is a node on a de-centralized tree! 
 
 	This architecture as the advantage of going according to Linus's Law:
 
