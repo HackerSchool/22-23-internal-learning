@@ -145,15 +145,15 @@ git pull origin
 ## Branching
 + Branching is a elementary tool that is part of git
 + A branch is an alternative streamline from main
-	+ It is used by collaborators that normally want to push some code that can break the master's features or that has it to be fully tested
+	+ It is used by collaborators that normally want to push some code that can break the master's features or that has yet to be fully tested
 ![Branches on the hackerschool.io repo (helps us fix hackercultura!!)](./branch.png){height=150px}
 	+ A branch can be switched into using ``` git checkout @branch``` or can be created and switched into by adding the ``` -b ``` flag to the previous command
 + In medium-small projects, branching may be enough
 
 ## Forking
-Note: This is a feature of Github and not git itself
-
-- Forking is an important collaboration tool as it allows you to make your own private copy of an exciting repository
+- **Note: This is a feature of some git instances (GitHub, GitLab, etc.), but not git itself, therefore we will not use the ```git```
+terminal package in this section
+- Nonetheless forking is an important collaboration tool, as it allows you to make your own private copy of an exciting repository
 - This means you can work freely, without pushing "trash" to the main repo
     - You can even start your own version of the project!
 - Once you're ready to merge your changes into the main repo you can open a **pull request**
