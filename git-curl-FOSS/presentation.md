@@ -48,48 +48,44 @@ Time to ditch this...
 
 ![](./gitDiff.png)
 
-## curl?
 
-Curl (short for client-url), is the command line tool that makes use of libcurl,
-a data transfer library that supports a array of network protocols such as FTP, HTTP, etc.
+## Remotes
 
-We will use curl to communicate with the GitHub API in the next sections.
-
-Curl and libcurl are FOSS licensed under the curl license, based on the MIT License, and compatible with the GPL v3.0
+![](./git_remote_1.png){width=280}
+![](./git_remote_2.png){width=350}
 
 # Let's Start!
 
+##
+
+> We will teach you how to work with it via the command line, but there are tools, like VS Code that provide the same functionality via a graphical interface
+
 ## Setting up your git/GitHub environment
-+ Create a GitHub account (using your institutional e-mail is often valuable).
-+ Get the git and curl packages.
-+ Generate a OAuth key, ssh key, or any mean of remote authentication.
-+ Save it somewhere safe (encrypt it with gpg, or use a password manager (for example: keepass).
+1. Create a GitHub account (using your institutional e-mail is often valuable).
+2. Get the `git` and `github-cli` packages (this last one is optional).
+3. Log in in github-cli (or if you prefer not to use it setup an SSH Key/ Personal Access Token)
+4. Configure user in git with
 
-Let's waddle back to the terminal
+	```bash
+	git config --global user.name "@user.name" 
 
-```bash
-git config --global user.name "@user.name" 
+	git config --global user.email @user.email
+	```
 
-git config --global user.email @user.email
-```
+## Setting up a GitHub repository
+1. Go to [https://github.com/new](https://github.com/new) 
 
-## Setting up a GitHub repository with curl and git
-Let's start with creating a remote and local repository (note: this can also be done in github's website)
+   (it's easier if you check "Add a README file")
 
-```bash
-curl -u @user https://api.github.com/user/repos -d \
-'{"name":"@string","private":false}' 
+After you've created your repo you need to download a local copy to do your work
 
-mkdir @string && cd @string
-```
-Now we can initialize our local repo and link it to the remote one
+2. Use the command `git clone` to do that:
 
-```bash
-git init
+	```bash
+	git clone <url_of_your_repo>
+	```
 
-git remote add origin https://github.com/@name/@string.git
-
-```
+You should now have a new folder with a copy of the repository you've just created
 
 # Your first commit!
 
@@ -122,24 +118,7 @@ This command alows you to view the state of your project (repo)
 ## Frontends (Vscode)
 
 
-# Working together!
-
-### Cloning
-Cloning allows you to download a git remote repository
-```bash
-git clone https://github.com/HackerSchool/inar.git
-```
-
-### Pulling
-Oposite of push, allows you to download remote changes to your existing local repo
-```bash
-git pull origin
-```
-
-## Repositories and actions
-![Actions and interactions between repositories](./git-transport.png){height=260px}
-
-## A pratical example: hackerschool.io
+## Repositories and actions (*)
 ![Git/GitHub flow of the hackerschool.io repository](./git-transportHS.png){height=260px}
 
 ## Branching
@@ -150,8 +129,8 @@ git pull origin
 	+ A branch can be switched into using ``` git checkout @branch``` or can be created and switched into by adding the ``` -b ``` flag to the previous command
 + In medium-small projects, branching may be enough
 
-## Forking
-- **Note: This is a feature of some git instances (GitHub, GitLab, etc.), but not git itself, therefore we will not use the ```git```
+## Forking (*)
+- !!! Note: This is a feature of some git instances (GitHub, GitLab, etc.), but not git itself, therefore we will not use the ```git```
 terminal package in this section
 - Nonetheless forking is an important collaboration tool, as it allows you to make your own private copy of an exciting repository
 - This means you can work freely, without pushing "trash" to the main repo
@@ -167,7 +146,7 @@ terminal package in this section
 When we want to merge with the original repo we open a pull request
 ![](./PR.png)
 
-## Conflicts
+## Conflicts (*)
 Sometimes, when you and another collaborators make a change to the same line, GitHub's auto-merge feature cannot fix it.
 
 ![A wild conflict appears (while making this presentation)](./conflict.png){height=160px}
