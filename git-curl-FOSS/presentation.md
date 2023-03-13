@@ -6,6 +6,7 @@ subtitle:
 author:
 - J. Rodrigues
 - F. Carvalho
+- R. Gama
 institute:
 - HackerSchool
 fonttheme:
@@ -87,6 +88,15 @@ After you've created your repo you need to download a local copy to do your work
 
 You should now have a new folder with a copy of the repository you've just created
 
+## Setting up a GitHub repository
+If you are using a SSH key or PAT it is important to use the correct URL format
+
+- HTTP URL
+	- https://github.com/Joao-Ex-Machina/Tree-Network-Client
+
+- SSH URL
+	- git@github.com:Joao-Ex-Machina/Tree-Network-Client
+
 # Your first commit!
 
 ## Git Status
@@ -125,7 +135,6 @@ This command alows you to view the state of your project (repo)
 + Branching is a elementary tool that is part of git
 + A branch is an alternative streamline from main
 	+ It is used by collaborators that normally want to push some code that can break the master's features or that has yet to be fully tested
-![Branches on the hackerschool.io repo (helps us fix hackercultura!!)](./branch.png){height=150px}
 	+ A branch can be switched into using ``` git checkout @branch``` or can be created and switched into by adding the ``` -b ``` flag to the previous command
 + In medium-small projects, branching may be enough
 
@@ -192,3 +201,4 @@ Since we benefit from this communal effort it is only fair that we also contribu
 ## Licenses
 
 ![Licenses and properties](./table.png){height=260px}
+---
